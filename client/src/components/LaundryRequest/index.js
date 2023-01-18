@@ -63,7 +63,7 @@ class LaundryRequest extends Component {
       status,
       description,
     };
-    const url = "http://localhost:4000/LaundryRequest";
+    const url = "http://localhost:3000/LaundryRequest";
     console.log(url);
     // const token = Cookies.get("jwt_token");
 
