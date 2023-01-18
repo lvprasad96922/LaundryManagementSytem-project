@@ -1,0 +1,78 @@
+.top-container {
+  height: 60px;
+  background-color: rgb(212, 235, 245);
+  width: 95%;
+  height: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 20px;
+
+  /* position: absolute;
+  top: 0px; */
+}
+.username-input-field {
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid #64748b;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.username-input-field:hover {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  border: 2px solid #64748b;
+}
+
+.userMobile-input-field {
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid #64748b;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.userMobile-input-field:hover {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  border: 2px solid #64748b;
+}
+.a {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #000000;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.a:hover {
+  color: rgb(1, 35, 51);
+  font-size: 20px;
+  font-weight: 500;
+}
+h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.span-lms {
+  font-size: 35px;
+}
+Link {
+  text-decoration: none;
+}

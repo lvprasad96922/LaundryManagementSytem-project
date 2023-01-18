@@ -1,0 +1,58 @@
+.LaundryOverview-container {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.laundry-price {
+  text-align: center;
+  margin-top: 35px;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+table {
+  width: 1240px;
+  height: 230px;
+}
+
+th {
+  /* border-bottom: 2px solid black; */
+  border: 3px solid black;
+  border-bottom: none;
+  height: 40px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+td {
+  text-align: center;
+  border: 3px solid black;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: 'sans-serif';
+}
+.margin {
+  border-right: none;
+}
+.margin-b {
+  border-bottom: none;
+}
+.copyright-container {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  height: 50px;
+  width: 1300px;
+  margin-top: 35px;
+}

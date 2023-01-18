@@ -1,0 +1,66 @@
+.laundry-request-container {
+  display: flex;
+  width: 97%;
+  list-style-type: none;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-container-request {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: transparent;
+}
+.input-container-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.user-input-field {
+  font-size: 17px;
+  font-weight: 500;
+  height: 30px;
+  border: 2px solid #64748b;
+  background-color: white;
+  color: #000000;
+  border-radius: 5px;
+  padding: 8px 16px 8px 16px;
+  width: 565px;
+  outline: none;
+}
+.user-input-field:hover {
+  border: 2px solid #0b69ff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.user-input {
+  width: 97%;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.select-input {
+  width: 100%;
+  height: 50px;
+}
+.submit-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  height: 40px;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 25px;
+}

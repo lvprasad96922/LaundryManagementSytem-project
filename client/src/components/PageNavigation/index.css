@@ -1,0 +1,24 @@
+.page-item-container {
+  list-style-type: none;
+}
+.page-btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 25px;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  height: 40px;
+  width: 160px;
+  margin-top: 5px;
+  background-color: transparent;
+  text-align: left;
+}
+.active-page-btn {
+  border-bottom: 2px solid white;
+  /* background-color: white; */
+  color: #0b69ff;
+  border-radius: 5px;
+}

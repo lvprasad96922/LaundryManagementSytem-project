@@ -1,0 +1,46 @@
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpcmFuQGdtYWlsLmNvbSIsImlhdCI6MTY3MzY1NDYxNn0.YUfTdxVx70f2rcKeVL0Lk306F1QhI0WeNrHnvydubiY
+
+###
+
+POST  http://localhost:3000/LaundryRequest
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpcmFuQGdtYWlsLmNvbSIsImlhdCI6MTY3MzY1NDYxNn0.YUfTdxVx70f2rcKeVL0Lk306F1QhI0WeNrHnvydubiY
+Content-Type: application/json
+
+{
+    "requestDate": "01-04-2023",
+    "topwear": 1,
+    "bottomwear": 5,
+    "woolenCloth": 2,
+    "service": "normal",
+   "contact": 9896332965,
+    "address": "uppal",
+    "description": "nothing"
+}
+
+###
+
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "name": "fake",
+  "email": "fake@gmail.com",
+  "mobile" : 789515259,
+  "password": "mike@456"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "email": "kiran@gmail.com",
+  "password": "kiran@456"
+}
+
+###
+GET http://localhost:3000/LaundryStatus
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBpeGVyQGdtYWlsLmNvbSIsImlhdCI6MTY3Mzk0MTk0N30.YJ6vbdN_AQr5278C2AF1PjxvU5NX-QKfcMEBRVWTouc
+Content-Type: application/json

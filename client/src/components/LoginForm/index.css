@@ -1,0 +1,106 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(12, 12, 24);
+  background-size: cover;
+  width: 100%; 
+  /* max-width: 1110px;
+  margin: auto; */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+  padding-left: 0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  background-color: white;
+}
+
+.form-heading {
+  font-family: "Roboto";
+  font-size: 28px;
+  text-align: center;
+}
+.span-lms {
+  font-weight: 900;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.userEmail-input-field {
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid #64748b;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.userEmail-input-field:hover {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  border: 2px solid #64748b;
+}
+.password-input-field {
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid #64748b;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.password-input-field:hover {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  border: 2px solid #64748b;
+}
+
+.login-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  height: 40px;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 25px;
+}
+.a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.a:hover {
+  color: rgb(8, 80, 114);
+  font-size: 20px;
+}
