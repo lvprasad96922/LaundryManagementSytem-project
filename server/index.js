@@ -96,7 +96,6 @@ app.post("/login", async (request, response) => {
         const payload = { email: email };
         const jwt_token = await jwt.sign(payload, JWT_SECRET);
         response.send({ jwt_token });
-        // console.log(jwt_token);
       } else {
         response.status(400);
         response.send("Invalid password");
@@ -110,13 +109,13 @@ app.post("/login", async (request, response) => {
 function authenticateToken(request, response, next) {
   let jwtToken;
   const authHeader = request.headers["authorization"];
-  console.log(authHeader);
+  //   console.log(authHeader);
   if (authHeader !== undefined) {
     jwtToken = authHeader.split(" ")[1];
     console.log(jwtToken);
   }
   if (jwtToken === undefined) {
-    console.log(jwtToken);
+    // console.log(jwtToken);
     response.status(401);
     response.send("Invalid JWT Token");
   } else {
@@ -129,7 +128,7 @@ function authenticateToken(request, response, next) {
           response.status(401);
           response.send("Invalid JWT Token");
         } else {
-          console.log({ ...payload });
+          //   console.log({ ...payload });
           localStorage.setItem("userEmail", payload.email);
           request.email = payload.email;
           next();
@@ -202,7 +201,7 @@ app.post("/LaundryRequest", async (request, response, next) => {
 
 app.get("/LaundryStatus", authenticateToken, async (request, response) => {
   const { email } = request;
-//   console.log(email);
+  //   console.log(email);
 
   const getUserQuery = `
   SELECT request_id,name,user_details.email,request_date,topwear,bottomwear,woolenCloth,
@@ -261,7 +260,7 @@ app.post("/forgot-password", async (req, res) => {
 
 app.get("/reset-password/:id/:token", async (req, res) => {
   const { id, token } = req.params;
-  console.log(req.params);
+  //   console.log(req.params);
   const getUserQuery = `SELECT * FROM user_details WHERE user_id='${id}';`;
   const oldUser = await db.get(getUserQuery);
   if (!oldUser) {
