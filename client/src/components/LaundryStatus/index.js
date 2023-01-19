@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Cookies from "js-cookie";
 import Status from "../Status";
-
+import { Chrono } from "react-chrono";
 import "./index.css";
 
 class LaundryStatus extends Component {
@@ -25,11 +25,11 @@ class LaundryStatus extends Component {
     const response = await fetch(apiUrl, options);
     if (response.ok) {
       const fetchedData = await response.json();
-      const updatedData = fetchedData.map((reqStatus) => ({
+      const updatedData = await fetchedData.map((reqStatus) => ({
         id: reqStatus.request_id,
         name: reqStatus.name,
         email: reqStatus.email,
-        date: reqStatus.request_date,
+        title: reqStatus.request_date,
         topwear: reqStatus.topwear,
         bottomwear: reqStatus.bottomwear,
         woolenCloth: reqStatus.woolenCloth,
@@ -47,13 +47,19 @@ class LaundryStatus extends Component {
 
   render() {
     const { laundryStatusList } = this.state;
+    // console.log(laundryStatusList);
     return (
       <>
-        <ul className="status-container">
-          {laundryStatusList.map((each) => (
-            <Status key={each.id} statusList={each} />
-          ))}
-        </ul>
+        {laundryStatusList.length > 0 && (
+          <div className="app-container">
+            <h1>Laundry requested Status</h1>
+            <Chrono items={laundryStatusList} mode="VERTICAL_ALTERNATING">
+              {laundryStatusList.map((each) => {
+                return <Status key={each.id} statusList={each} />;
+              })}
+            </Chrono>
+          </div>
+        )}
       </>
     );
   }
